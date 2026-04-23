@@ -5,7 +5,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
 
 function Phone() {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
 
   useFrame(() => {
     if (ref.current) {
