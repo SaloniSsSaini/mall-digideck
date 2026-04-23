@@ -6,7 +6,7 @@ import { mallData } from "@/data/mallData";
 
 export default function Why() {
   const ref = useRef(null);
-  useScrollAnimation(ref);
+  useScrollAnimation();
 
   return (
     <section
