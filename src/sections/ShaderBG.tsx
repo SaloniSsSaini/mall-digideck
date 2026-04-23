@@ -5,7 +5,7 @@ import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 
 function ShaderPlane() {
-  const ref = useRef<any>();
+  const ref = useRef<any>(null);
 
   useFrame(({ clock }) => {
     ref.current.material.uniforms.uTime.value = clock.elapsedTime;
